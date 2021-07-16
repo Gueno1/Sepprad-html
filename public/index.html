@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+
+
+
+  <title>SEPPRAD</title>
+  <link rel="shortcut icon" type="image/png" href="/assets/img/navbar-logo.png" width: 10px>
+</head>
+
+<body>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/8.7.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="/__/firebase/8.7.1/firebase-analytics.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">SEPPRAD</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">Sobre Nosotros</a>
+          </li>
+          <li class="nav__item">
+            <a href="#discover" class="nav__link">Descubre</a>
+          </li>
+          <li class="nav__item">
+            <a href="#service" class="nav__link">Servicios</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contacto</a>
+          </li>
+
+        </ul>
+
+        <div class="nav__dark">
+          <!-- Theme change button  -->
+          <span class="change-theme-name">Dark Mode</span>
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+        </div>
+
+        <i class="ri-close-line nav__close" id="nav-close"></i>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-function-line"></i>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <!--========== Home ==========-->
+    <section class="home" id="home">
+      <img src="assets/img/background.jpg" alt="" class="home__img" />
+
+      <div class="home__container container grid">
+        <div class="home__data">
+          <span class="home__data-subtitle">SEPPRAD Home Care</span>
+          <h1 class="home__data-title">
+            Porque el <br> Cuidado <b>Empieza <br>En Casa</b>
+          </h1>
+          <a href="#" class="button">Explorar</a>
+        </div>
+
+        <div class="home__social">
+          <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+            <i class="ri-facebook-box-fill"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+            <i class="ri-instagram-fill"></i>
+          </a>
+          <a href="https://www.twitter.com/" target="_blank" class="home__social-link">
+            <i class="ri-twitter-fill"></i>
+          </a>
+        </div>
+        <!--  Card Home info
+
+       <div class="home__info">
+          <div>
+            <span class="home__info-title">5 Best Places To Visit</span>
+            <a href="#" class="button button--flex button--link home__info-button">
+              More <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+
+          <div class="home__info-overlay">
+            <img src="assets/img/home2.jpg" alt="" class="home__info-img" />
+          </div>
+        </div>
+    -->
+
+
+      </div>
+    </section>
+    <!--========== About ==========-->
+    <section class="about section" id="about">
+      <div class="about__container container grid">
+        <div class="about__data">
+          <h2 class="section__title about__title">
+            Sobre Nosotros
+          </h2>
+          <p class="about__description">
+            Somos una organización que brinda Hospitalización Domiciliaria de manera integral, abarcando todo el ciclo
+            vital de nuestros pacientes. Contamos con Profesionales
+            especialistas en Cuidados Intensivos Pediátrico y Adulto, con una vasta experiencia y trayectoria.
+            <br><br>
+            Nos enfocamos en la atención de enfermería holística e integral, interviniendo en las necesidades alteradas
+            de nuestros pacientes, con el fin de recuperar su condición de salud de manera óptima.
+            <br><br>
+            Disponemos de personal Técnico de enfermería de nivel Superior altamente calificado para satisfacer las
+            necesidades
+            de salud de nuestros pacientes.
+
+
+          </p>
+          <a href="#service" class="button">Conoce Más Sobre Nuetros Servicios</a>
+        </div>
+
+        <div class="about__img">
+          <div class="about__img-overlay">
+            <img src="assets/img/sepprad2.jpeg" alt="" class="about__img-one" />
+          </div>
+
+          <div class="about__img-overlay">
+            <img src="assets/img/about2.jpg" alt="" class="about__img-two" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--========== Discover ==========-->
+    <section class="discover section" id="discover">
+      <h2 class="section__title">
+        Descubre Nuestros Servicios <br />
+        Más Atractivos
+      </h2>
+
+      <div class="discover__container container swiper-container">
+        <div class="swiper-wrapper">
+          <!--========== Discover 1 ==========-->
+          <div class="discover__card swiper-slide">
+            <img src="assets/img/discover1.jpg" alt="" class="discover__img" />
+            <div class="discover__data">
+              <h2 class="discover__title">Visitas de Enfermería</h2>
+              <span class="discover__description">Visitas en terreno a pacientes hospitalizados en su domicilio, quienes
+                recibirán un plan de cuidados profesionales y holísticos, por Enfermeras Universitarias</span>
+            </div>
+          </div>
+          <!--========== Discover 2 ==========-->
+          <div class="discover__card swiper-slide">
+            <img src="assets/img/discover2.jpg" alt="" class="discover__img" />
+            <div class="discover__data">
+              <h2 class="discover__title">Administración Medicamentos</h2>
+              <span class="discover__description">Servicio de administración de endovenosos,subcutáneos e intra
+                musculares, por Enfermeras Universitarias</span>
+            </div>
+          </div>
+
+          <!--========== Discover 3 ==========-->
+          <div class="discover__card swiper-slide">
+            <img src="assets/img/discover3.jpg" alt="" class="discover__img" />
+            <div class="discover__data">
+              <h2 class="discover__title">Visitas Médicas</h2>
+              <span class="discover__description">Ayudar al enfermo a realizar los ejercicios terapéuticos que les haya
+                recomendado su médico</span>
+            </div>
+          </div>
+
+          <!--========== Discover 4 ==========-->
+          <div class="discover__card swiper-slide">
+            <img src="assets/img/discover4.jpg" alt="" class="discover__img" />
+            <div class="discover__data">
+              <h2 class="discover__title">Toma de muestra de exámenes</h2>
+              <span class="discover__description">Servicio enfocado a la toma de muestras de exámenes de sangre, orina,
+                etc. y traslado a laboratorio. Costo de exámenes según plan de salud
+                del paciente. Indispensable contar con orden médica de exámenes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--========== Experience ==========-->
+    <section class="experience section">
+      <h2 class="section__title">Con Nuestra Experiencia <br> Te Atenderemos</h2>
+
+      <div class="experience__container container grid">
+        <div class="experience__content grid">
+          <div class="experience__data">
+            <h2 class="experience__number">1</h2>
+            <span class="experience__description">Año <br> De Experiencia</span>
+          </div>
+
+          <div class="experience__data">
+            <h2 class="experience__number">10</h2>
+            <span class="experience__description">Servicios <br> Completos</span>
+          </div>
+
+          <div class="experience__data">
+            <h2 class="experience__number">40+</h2>
+            <span class="experience__description">Pacientes <br> Asistidos</span>
+          </div>
+        </div>
+
+
+        <div class="experience__img grid">
+          <div class="experience__overlay">
+            <img src="assets/img/experience1.jpg" alt="" class="experience__img-one">
+          </div>
+          <div class="experience__overlay">
+            <img src="assets/img/experience2.jpg" alt="" class="experience__img-two">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--========== PLACES ==========-->
+
+    <section class="place section" id="service">
+      <h2 class="section__title">Nuestros Servicios</h2>
+
+      <div class="place__container container grid">
+        <!--========== PLACES CARD 1 ==========-->
+        <div class="place__card">
+          <img src="assets/img/place10.jpg" alt="" class="place__img">
+
+          <div class="place__content">
+            <span class="place__rating">
+              <i class="ri-star-line place__rating-icon"></i>
+              <span class="place__rating-number">4,8</span>
+            </span>
+
+            <div class="place__data">
+              <h3 class="place__title">Visitas de Enfermería</h3>
+              <!--========== Span 
+
+              <span class="place__subtitle">Indonesia</span>
+              <span class="place__price">$2499</span>
+              ==========-->
+            </div>
+          </div>
+          <!--========== Button  
+          <button class="button button--flex place__button">
+            <i class="ri-arrow-right-line"></i>
+          </button>
+          ==========-->
+        </div>
+        <!--========== PLACES CARD 2 ==========-->
+        <div class="place__card">
+          <img src="assets/img/place2.jpg" alt="" class="place__img">
+
+          <div class="place__content">
+            <span class="place__rating">
+              <i class="ri-star-line place__rating-icon"></i>
+              <span class="place__rating-number">4,8</span>
+            </span>
+
+            <div class="place__data">
+              <h3 class="place__title">Administración Medicamentos</h3>
+              <!--========== Span 
+  
+                <span class="place__subtitle">Indonesia</span>
+                <span class="place__price">$2499</span>
+                ==========-->
+            </div>
+          </div>
+          <!--========== Button  
+            <button class="button button--flex place__button">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+            ==========-->
+        </div>
+        <!--========== PLACES CARD 3 ==========-->
+        <div class="place__card">
+          <img src="assets/img/place3.jpg" alt="" class="place__img">
+
+          <div class="place__content">
+            <span class="place__rating">
+              <i class="ri-star-line place__rating-icon"></i>
+              <span class="place__rating-number">4,8</span>
+            </span>
+
+            <div class="place__data">
+              <h3 class="place__title">Visitas Médicas</h3>
+              <!--========== Span 
+  
+                <span class="place__subtitle">Indonesia</span>
+                <span class="place__price">$2499</span>
+                ==========-->
+            </div>
+          </div>
+          <!--========== Button  
+            <button class="button button--flex place__button">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+            ==========-->
+        </div>
+
+        <!--========== PLACES CARD 4 ==========-->
+        <div class="place__card">
+          <img src="assets/img/place4.jpg" alt="" class="place__img">
+
+          <div class="place__content">
+            <span class="place__rating">
+              <i class="ri-star-line place__rating-icon"></i>
+              <span class="place__rating-number">4,8</span>
+            </span>
+
+            <div class="place__data">
+              <h3 class="place__title">Toma de muestra de exámenes de laboratorio</h3>
+              <!--========== Span 
+  
+                <span class="place__subtitle">Indonesia</span>
+                <span class="place__price">$2499</span>
+                ==========-->
+            </div>
+          </div>
+          <!--========== Button  
+            <button class="button button--flex place__button">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+            ==========-->
+        </div>
+
+        <!--========== PLACES CARD 5 ==========-->
+        <div class="place__card">
+          <img src="assets/img/discover1.jpg" alt="" class="place__img">
+
+          <div class="place__content">
+            <span class="place__rating">
+              <i class="ri-star-line place__rating-icon"></i>
+              <span class="place__rating-number">4,8</span>
+            </span>
+
+            <div class="place__data">
+              <h3 class="place__title">Curaciones Avanzadas de Heridas</h3>
+              <!--========== Span 
+
+            <span class="place__subtitle">Indonesia</span>
+            <span class="place__price">$2499</span>
+            ==========-->
+            </div>
+          </div>
+          <!--========== Button  
+        <button class="button button--flex place__button">
+          <i class="ri-arrow-right-line"></i>
+        </button>
+        ==========-->
+        </div>
+
+
+        <!--========== PLACES CARD 6 ==========-->
+        <div class="place__card">
+          <img src="assets/img/place6.jpg" alt="" class="place__img">
+
+          <div class="place__content">
+            <span class="place__rating">
+              <i class="ri-star-line place__rating-icon"></i>
+              <span class="place__rating-number">4,8</span>
+            </span>
+
+            <div class="place__data">
+              <h3 class="place__title">Terapeutas Ocupacionales</h3>
+              <!--========== Span 
+
+        <span class="place__subtitle">Indonesia</span>
+        <span class="place__price">$2499</span>
+        ==========-->
+            </div>
+          </div>
+          <!--========== Button  
+    <button class="button button--flex place__button">
+      <i class="ri-arrow-right-line"></i>
+    </button>
+    ==========-->
+        </div>
+
+
+        <!--========== PLACES CARD 7 ==========-->
+        <div class="place__card">
+          <img src="assets/img/discover1.jpg" alt="" class="place__img">
+
+          <div class="place__content">
+            <span class="place__rating">
+              <i class="ri-star-line place__rating-icon"></i>
+              <span class="place__rating-number">4,8</span>
+            </span>
+
+            <div class="place__data">
+              <h3 class="place__title">Hospitalización Domiciliaria</h3>
+              <!--========== Span 
+
+          <span class="place__subtitle">Indonesia</span>
+          <span class="place__price">$2499</span>
+          ==========-->
+            </div>
+          </div>
+          <!--========== Button  
+      <button class="button button--flex place__button">
+        <i class="ri-arrow-right-line"></i>
+      </button>
+      ==========-->
+        </div>
+
+        <!--========== PLACES CARD 8 ==========-->
+        <div class="place__card">
+          <img src="assets/img/discover1.jpg" alt="" class="place__img">
+
+          <div class="place__content">
+            <span class="place__rating">
+              <i class="ri-star-line place__rating-icon"></i>
+              <span class="place__rating-number">4,8</span>
+            </span>
+
+            <div class="place__data">
+              <h3 class="place__title">Kinesiólogos</h3>
+              <!--========== Span 
+
+            <span class="place__subtitle">Indonesia</span>
+            <span class="place__price">$2499</span>
+            ==========-->
+            </div>
+          </div>
+          <!--========== Button  
+        <button class="button button--flex place__button">
+          <i class="ri-arrow-right-line"></i>
+        </button>
+        ==========-->
+        </div>
+
+        <!--========== PLACES CARD 9 ==========-->
+        <div class="place__card">
+          <img src="assets/img/place9.jpg" alt="" class="place__img">
+
+          <div class="place__content">
+            <span class="place__rating">
+              <i class="ri-star-line place__rating-icon"></i>
+              <span class="place__rating-number">4,8</span>
+            </span>
+
+            <div class="place__data">
+              <h3 class="place__title">Fonoaudiólogos</h3>
+              <!--========== Span 
+
+              <span class="place__subtitle">Indonesia</span>
+              <span class="place__price">$2499</span>
+              ==========-->
+            </div>
+          </div>
+          <!--========== Button  
+          <button class="button button--flex place__button">
+            <i class="ri-arrow-right-line"></i>
+          </button>
+          ==========-->
+        </div>
+
+
+        <!--========== PLACES CARD 10 ==========-->
+        <div class="place__card">
+          <img src="assets/img/place10.jpg" alt="" class="place__img">
+
+          <div class="place__content">
+            <span class="place__rating">
+              <i class="ri-star-line place__rating-icon"></i>
+              <span class="place__rating-number">4,8</span>
+            </span>
+
+            <div class="place__data">
+              <h3 class="place__title">Servicio de Tens y Cuidadoras a Domicilio</h3>
+              <!--========== Span 
+  
+                <span class="place__subtitle">Indonesia</span>
+                <span class="place__price">$2499</span>
+                ==========-->
+            </div>
+          </div>
+          <!--========== Button  
+            <button class="button button--flex place__button">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+            ==========-->
+        </div>
+
+
+
+
+
+
+      </div>
+    </section>
+
+    <!--========== SUBSCRIBE ==========-->
+    <section class="subscribe section" id="contact">
+      <div class="subscribe__bg">
+        <div class="subribe__container container">
+          <h2 class="section__title subscribe__title">Contactanos <br> para recibir más información</h2>
+          <p class="subscribe__description">
+            Nuestras Redes Sociales <br>
+            <a href="https://www.facebook.com/" target="_blank" class="home__social-link">Facebook</a>
+            <i class="ri-facebook-box-fill"></i>
+            <a href="https://www.instagram.com/" target="_blank" class="home__social-link">Intagram</a>
+            <i class="ri-instagram-fill"></i>
+            <a href="https://www.linkedin.com/" target="_blank" class="home__social-link">Linkedin</a>
+            <i class="ri-linkedin-box-fill"></i>
+          </p>
+
+          <form action="" class="subscribe__form">
+            <input type="text" placeholder="Ingresar Email" class="subscribe__input">
+
+            <button class="button">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div class="footer__data">
+            <h3 class="footer__title">Travel</h3>
+            <p class="footer__description">Travel you choose the <br> destination, we offer you the
+              <br> experience.
+            </p>
+
+            <div>
+              <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                <i class="ri-facebook-box-fill"></i>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a href="https://www.twitter.com/" target="_blank" class="footer__social">
+                <i class="ri-twitter-fill"></i>
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank" class="footer__social">
+                <i class="ri-linkedin-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle">About</h3>
+
+            <ul>
+              <li class="footer__item">
+                <a href="#" class="footer__link">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Features</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">New & Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle">Company</h3>
+
+            <ul>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Team</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Plan y Prices</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Become a Member</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle">Support</h3>
+
+            <ul>
+              <li class="footer__item">
+                <a href="#" class="footer__link">FAQs</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Support Center</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__rights">
+          <p class="footer__copy">&#169; 2021 SEPPRAD. All rights reverved.</p>
+          <div class="footer__terms">
+            <a href="#" class="footer__terms-link">Terms & Agreements</a>
+            <a href="#" class="footer__terms-link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!--========== SCROLL UP ==========-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line scrollup__icon"></i>
+  </a>
+
+  <!--=============== SCROLL REVEAL===============-->
+  <script src="assets/js/scrollreveal.min.js"></script>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="assets/js//swiper-bundle.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
